@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101044">
+<title>Weekplan · Lịch học & deadline</title>
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#" data-nav="week"><span class="brand-mark" data-icon="layers"></span><span>Weekplan<small>STUDENT PLANNER</small></span></a>
+    <p class="sidebar-caption">WORKSPACE</p>
+    <nav aria-label="Workspace">
+      <button data-nav="week" class="active"><span data-icon="calendar"></span>Lịch tuần</button>
+      <button data-nav="semester"><span data-icon="grid"></span>Tổng quan kỳ</button>
+      <button data-nav="tasks"><span data-icon="flag"></span>Deadline & việc làm</button>
+    </nav>
+    <p class="sidebar-caption">QUẢN LÝ</p>
+    <nav aria-label="Quản lý">
+      <button data-nav="groups"><span data-icon="layers"></span>Môn & dự án</button>
+      <button data-nav="sources"><span data-icon="link"></span>Nguồn lịch</button>
+    </nav>
+    <div class="side-bottom"><div class="avatar">WP</div><div><strong>Lịch cá nhân</strong><small>Không gian cá nhân</small></div><span class="side-setting" data-icon="settings" aria-hidden="true"></span></div>
+  </aside>
+  <main>
+    <header class="top"><div class="crumb"><span>Workspace</span><span data-icon="chevR"></span><strong id="crumb">Lịch tuần</strong></div><span class="zone"><span data-icon="clock"></span>Giờ Việt Nam · GMT+7</span></header>
+    <div id="workspace"></div>
+  </main>
+</div>
+<dialog id="modal" aria-labelledby="dialog-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
